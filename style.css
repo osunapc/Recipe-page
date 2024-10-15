@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+
+:root {
+	--White: hsl(0, 0%, 100%);
+	--Stone100: hsl(30, 54%, 90%);
+	--Stone150: hsl(30, 18%, 87%);
+	--Stone600: hsl(30, 10%, 34%);
+	--Stone900: hsl(24, 5%, 18%);
+	--Brown800: hsl(14, 45%, 36%);
+	--Rose800: hsl(332, 51%, 32%);
+	--Rose50: hsl(330, 100%, 98%);
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+p,
+li,
+td {
+	font-family: "Outfit", sans-serif;
+	font-weight: 400;
+	color: var(--Stone600);
+}
+
+header img {
+	width: 100%;
+}
+main {
+	padding: 1rem;
+}
+main p {
+	margin: 1rem 0;
+}
+
+h1 {
+	font-family: "Young Serif", serif;
+	font-size: bold;
+}
+h2 {
+        color: var(--Rose800);
+        font-family: "Young Serif", serif;
+	font-size: bold;
+    margin: .6rem 0;
+    }
+
+.especial {
+	background-color: var(--Rose50);
+	padding: 1rem;
+	border-radius: 10px;
+	h3 {
+		color: var(--Rose800);
+		margin-bottom: 0.5rem;
+	}
+}
+
+.ingredients {
+    
+    
+	margin: 10px 0;
+
+	ul {
+		margin-left: 20px;
+	}
+}
+.linea-separadora {
+	display: block;
+	height: 2px;
+	background-color: var(--Stone150);
+	margin: 20px 0;
+}
+
+.instrucciones {
+    
+	
+	ol {
+		margin-left: 20px;
+	}
+}
+.nutricion {
+    
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th,
+td {
+	border-bottom: 1px solid #ddd;
+    padding: 8px;
+	text-align: left;
+}
+
+.td-color {
+	color: var(--Rose800);
+	font-family: "Outfit", serif;
+    font-weight: 700;
+}
+}
+
+/*footer*/
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+@media (width > 375px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--Stone100);
+        margin: 1.5rem;
+        
+        
+        
+    }
+    header, main {
+        max-width: 60%;
+        background-color: var(--White);
+        padding: 1rem;
+        
+
+    } 
+    header {
+        
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+main {
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+    } 
+    header img {
+        border-radius: 15px;
+    }
+
+};
